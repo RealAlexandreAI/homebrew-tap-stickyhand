@@ -5,21 +5,21 @@
 class Stickyhand < Formula
   desc "✋ Fetch webpage content into structured text using crawlers or AI as your want."
   homepage "https://github.com/RealAlexandreAI/sticky-hand"
-  version "0.0.5"
+  version "0.0.6"
   license "GPLv3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/RealAlexandreAI/sticky-hand/releases/download/v0.0.5/stickyhand_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "b22e5e3060b83bfeb59c68fdeaf1f71f9f4a85fac523e669212859cb3f4deedb"
+      url "https://github.com/RealAlexandreAI/sticky-hand/releases/download/v0.0.6/stickyhand_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "8bd44dff20314933633c55c906c5c367741209b2c92b950103d654c115cc347f"
 
       def install
         bin.install "stickyhand"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/RealAlexandreAI/sticky-hand/releases/download/v0.0.5/stickyhand_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "ae1656da43139e77ed47f73e16c4df16aee3ae8e633b139224c7744ba7ba0aef"
+      url "https://github.com/RealAlexandreAI/sticky-hand/releases/download/v0.0.6/stickyhand_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "47bcaf2b39cff336292cd770b6eeb58f7b2bead32b7105dca1fe24e6447511ea"
 
       def install
         bin.install "stickyhand"
@@ -29,16 +29,16 @@ class Stickyhand < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/RealAlexandreAI/sticky-hand/releases/download/v0.0.5/stickyhand_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "71542c15f1aa556cbd74ba485e95b6da36e9915b40d7fee196109e16550830c1"
+      url "https://github.com/RealAlexandreAI/sticky-hand/releases/download/v0.0.6/stickyhand_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "8a5cc9355f3aad991f9757cc759c3a6a0d55e60f8a2d18c24696a10654957da9"
 
       def install
         bin.install "stickyhand"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RealAlexandreAI/sticky-hand/releases/download/v0.0.5/stickyhand_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "8125020ed5b996c398500dcd7f79298ba784e5f8b040633c4c4a2960989d43b7"
+      url "https://github.com/RealAlexandreAI/sticky-hand/releases/download/v0.0.6/stickyhand_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "75162ecef1169e48bfaa3da6f1eeaa407f477da9dc3adde7b97fb00b6c765ffb"
 
       def install
         bin.install "stickyhand"
